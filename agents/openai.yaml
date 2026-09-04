@@ -1,0 +1,4 @@
+interface:
+  display_name: "Isaac Sim and Brev Operations"
+  short_description: "Plan and run reproducible Isaac robotics"
+  default_prompt: "Use $isaac-sim-brev-operations to plan or resume this Isaac robotics project with current-state discovery, safe runtime execution, reward and acceptance contracts, evidence capture, and verified closure."

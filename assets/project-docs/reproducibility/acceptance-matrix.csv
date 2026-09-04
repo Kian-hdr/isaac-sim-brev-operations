@@ -1,0 +1,11 @@
+gate_id,domain,requirement,required_evidence,status,evidence_pointer,owner,last_checked,claim_enabled
+BASE-IDENTITY,baseline,"Freeze repository, source state, environment, assets, artifact root, authority, and owners","identity manifest and ownership record",PENDING,,Unassigned,{{DATE}},"Current baseline is reconciled"
+CPU-CONTRACTS,implementation,"Pass applicable schemas, invariants, deterministic tests, lint, and configuration validation","test logs and frozen configuration",PENDING,,Unassigned,{{DATE}},"Local contracts pass"
+RUNTIME-SMOKE,runtime,"Pass the smallest official and project-specific Isaac smoke with finite state and inhibited physical output","runtime manifest logs and telemetry",PENDING,,Unassigned,{{DATE}},"Project steps in the pinned Isaac runtime"
+DYNAMICS-GATE,dynamics,"Pass project-specific timing, controller, actuator, contact, saturation, recovery, and replay bounds","frozen dynamics evaluation",PENDING,,Unassigned,{{DATE}},"Configured simulated dynamics pass"
+TRAIN-BOUNDED,training,"Pass a bounded learning or optimization smoke without invariant violations","training manifest metrics and checkpoints",PENDING,,Unassigned,{{DATE}},"Learning plumbing and bounded signal pass"
+TRAIN-CURRICULUM,training,"Pass every frozen curriculum promotion gate","stage evaluation ledger and checkpoints",PENDING,,Unassigned,{{DATE}},"Curriculum completed under frozen gates"
+EVAL-FROZEN,evaluation,"Pass the complete frozen baseline, multi-seed, unseen, perturbation, and recovery suites that apply","aggregate and per-run reports including failures",PENDING,,Unassigned,{{DATE}},"Frozen evaluation claim is supported"
+DELIV-ACCEPTED,deliverable,"Produce and QA every requested deliverable against its behavioral and format contract","certified outputs technical QA visual QA and provenance",PENDING,,Unassigned,{{DATE}},"Requested deliverables are accepted"
+EVID-COMPLETE,evidence,"Verify identities, manifests, telemetry, failures, checksums, and backup","final evidence manifest and backup verification",PENDING,,Unassigned,{{DATE}},"Evidence package is complete and recoverable"
+OPS-CLOSED,operations,"Export essential evidence and verify final provider compute, storage, price, and balance state","provider-state record and shutdown logs",PENDING,,Unassigned,{{DATE}},"Operational closure is verified"

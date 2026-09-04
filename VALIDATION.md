@@ -29,9 +29,14 @@ The public payload was manually inspected for private records and dependencies.
 
 An additional development-only validation used OpenAI's installed skill validator
 with PyYAML in a temporary virtual environment. The published tools do not depend
-on that environment or on PyYAML. Public download and CI results will be linked
-from the release notes after verification. See GitHub Actions for the status of the
-exact revision you download.
+on that environment or on PyYAML. The initial public revision also passed all six GitHub Actions jobs (Linux, macOS,
+and Windows, each with Python 3.9 and 3.13):
+[initial CI evidence](https://github.com/Kian-hdr/isaac-sim-brev-operations/actions/runs/33918565472).
+An unauthenticated HTTPS clone and main-branch ZIP download matched that revision;
+package checks, 24 tests, and setup smoke passed again from the downloaded ZIP.
+
+The release notes link final tag/download verification. See GitHub Actions for the
+status of the exact revision you download.
 
 ## Not established by these checks
 

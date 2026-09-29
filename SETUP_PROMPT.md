@@ -12,10 +12,10 @@ Complete the safe local setup, rather than only giving me instructions.
    supported skill directory. Use Python 3.9 or newer. If a prerequisite is missing,
    install it using an appropriate trusted method when authorized; otherwise explain
    the exact manual step. Never change system Python or security settings.
-2. Download release v1.0.0 into a new, uniquely named directory. Prefer:
-   git clone --branch v1.0.0 --depth 1 https://github.com/Kian-hdr/isaac-sim-brev-operations.git
+2. Download release v1.1.0 into a new, uniquely named directory. Prefer:
+   git clone --branch v1.1.0 --depth 1 https://github.com/Kian-hdr/isaac-sim-brev-operations.git
    If Git is unavailable, download and extract:
-   https://github.com/Kian-hdr/isaac-sim-brev-operations/archive/refs/tags/v1.0.0.zip
+   https://github.com/Kian-hdr/isaac-sim-brev-operations/archive/refs/tags/v1.1.0.zip
    Do not overwrite an existing checkout. Record the source URL and version.
 3. Read README.md, SKILL.md, SETUP_PROMPT.md, NOTICE.md, and
    references/execution-standard.md before executing the downloaded scripts.

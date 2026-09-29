@@ -41,6 +41,16 @@ and deliverables from its current sources. Do not reuse any prior
 project's parameters as defaults. Historical examples may suggest questions or tests,
 but they are not current requirements or verified facts for the active project.
 
+## Brev setup within an authorized task
+
+When an Isaac task includes Brev setup and paid compute is authorized, carry setup
+through to runtime readiness: recover the existing CLI session when possible, inspect
+compatible environments or Launchables, provision within the task budget, configure
+the required dependencies, and run the relevant Isaac smoke. A successful login or
+reachable shell is not runtime proof. Reuse suitable resources and recipes before
+creating more. Follow [references/brev-lifecycle.md](references/brev-lifecycle.md)
+for authentication, Launchable, retry, export, and shutdown boundaries.
+
 ## Essential workflow
 
 1. Discover the active project's state before asking questions. Read its instructions,
@@ -61,7 +71,7 @@ but they are not current requirements or verified facts for the active project.
    stepping and sensor smoke, dynamics validation, bounded learning, curriculum,
    frozen evaluation, visible validation, and deliverable production. Skip rungs that
    genuinely do not apply; never skip the rung that tests the current uncertainty.
-7. Track substantive execution in the project acceptance matrix and execution log. Give every child
+7. Track the complete goal in the project acceptance matrix and execution log. Give every child
    run a stable ID. Persist manifests, logs, checkpoints, telemetry, failures, partial
    shards, and checksums before the next expensive or destructive boundary.
 8. Promote only immutable results that pass the controlling evaluation, claims,
@@ -99,10 +109,13 @@ deliverables; unresolved template text is not a finished plan.
 - Continue through implementation, runtime, validation, export, documentation, and
   shutdown while useful in-scope work remains. A plan is not the deliverable.
 - This skill grants no spending, account, deletion, publication, or physical-test
-  authority. Verify current project authority before paid use.
-- Never add funds, enable auto-recharge, change billing, accept terms, delete an
-  instance or storage, publish material, or begin physical testing without explicit
-  authority.
+  authority. Verify current project authority before paid use and do not ask again
+  for actions already covered by the user's task or standing instructions.
+- Delete a task-owned temporary instance only when deletion is authorized and its
+  required outputs and recovery inputs are verified outside the instance. Follow
+  [references/brev-lifecycle.md](references/brev-lifecycle.md#export-and-shutdown).
+- Never add funds, enable auto-recharge, change billing, accept terms, publish
+  material, begin physical testing, or delete resources beyond the user's authority.
 
 ## Evidence language
 

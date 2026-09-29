@@ -10,7 +10,7 @@ documentation toolkit, not a simulator, robot controller, training implementatio
 cloud provisioner, or automated dashboard.
 
 **Start here:** copy the setup prompt below into your AI coding assistant.
-[Download v1.0.0 ZIP](https://github.com/Kian-hdr/isaac-sim-brev-operations/archive/refs/tags/v1.0.0.zip)
+[Download v1.1.0 ZIP](https://github.com/Kian-hdr/isaac-sim-brev-operations/archive/refs/tags/v1.1.0.zip)
 • [Dedicated setup prompt](SETUP_PROMPT.md) • [Validation scope](VALIDATION.md)
 
 ## Copy-ready setup prompt
@@ -23,10 +23,10 @@ Complete the safe local setup, rather than only giving me instructions.
    supported skill directory. Use Python 3.9 or newer. If a prerequisite is missing,
    install it using an appropriate trusted method when authorized; otherwise explain
    the exact manual step. Never change system Python or security settings.
-2. Download release v1.0.0 into a new, uniquely named directory. Prefer:
-   git clone --branch v1.0.0 --depth 1 https://github.com/Kian-hdr/isaac-sim-brev-operations.git
+2. Download release v1.1.0 into a new, uniquely named directory. Prefer:
+   git clone --branch v1.1.0 --depth 1 https://github.com/Kian-hdr/isaac-sim-brev-operations.git
    If Git is unavailable, download and extract:
-   https://github.com/Kian-hdr/isaac-sim-brev-operations/archive/refs/tags/v1.0.0.zip
+   https://github.com/Kian-hdr/isaac-sim-brev-operations/archive/refs/tags/v1.1.0.zip
    Do not overwrite an existing checkout. Record the source URL and version.
 3. Read README.md, SKILL.md, SETUP_PROMPT.md, NOTICE.md, and
    references/execution-standard.md before executing the downloaded scripts.
@@ -91,7 +91,7 @@ The scripts in this repository never invoke Brev or start paid compute.
 Clone into a new directory, or extract the ZIP and open a terminal in its root:
 
 ```sh
-git clone --branch v1.0.0 --depth 1 https://github.com/Kian-hdr/isaac-sim-brev-operations.git
+git clone --branch v1.1.0 --depth 1 https://github.com/Kian-hdr/isaac-sim-brev-operations.git
 cd isaac-sim-brev-operations
 python3 scripts/validate_package.py
 python3 -m unittest discover -s tests -v
@@ -177,6 +177,10 @@ unknowns to your project before runtime. See [example prompts](examples/prompts.
 - No GPU execution, learning convergence, streaming, real robot behavior, or live
   Brev lifecycle result is implied by this package's tests. Exact runtime versions,
   prices, capacity, and license acceptance must be checked for each project.
+- The Brev reference now guides session recovery, reuse of Launchables, runtime
+  readiness, and authorized cleanup after verified export. It does not grant paid
+  compute or deletion authority, perform login, deploy an instance, or verify a
+  Launchable automatically.
 - Installer/generator conflict checks protect normal use, not hostile concurrent
   filesystem changes. Do not run them in a directory another process is mutating.
 
@@ -195,7 +199,7 @@ unknowns to your project before runtime. See [example prompts](examples/prompts.
 
 ## Updates and maintenance
 
-`VERSION` identifies the distribution. `v1.0.0` is the initial public tag; `main` may
+`VERSION` identifies the distribution. `v1.0.0` was the initial public tag; `main` may
 contain later work. To update, download a desired tagged version into a new checkout,
 review changes and notices, run validation/tests/smoke, compare local modifications,
 and move the old installed copy to a recovery directory outside active skill discovery.

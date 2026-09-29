@@ -38,6 +38,14 @@ package checks, 24 tests, and setup smoke passed again from the downloaded ZIP.
 The release notes link final tag/download verification. See GitHub Actions for the
 status of the exact revision you download.
 
+For the v1.1.0 candidate on 2026-09-29, package validation, all 24 regression tests,
+and isolated setup smoke passed on macOS with Python 3.9.6 and 3.13.15. The installed
+skill creator's frontmatter validator also passed with PyYAML supplied in an isolated
+`uv` run. A manual review of the changed files found no private project overlay,
+account-specific Launchable ID, credential, or local machine path. This candidate's
+GitHub Actions result, tag, downloadable ZIP, Brev login, Launchable deployment, GPU
+runtime, and cleanup remain unverified until checked separately.
+
 ## Not established by these checks
 
 - Assistant discovery or autonomous decision quality across every client/model.

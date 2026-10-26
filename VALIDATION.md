@@ -46,6 +46,16 @@ account-specific Launchable ID, credential, or local machine path. This candidat
 GitHub Actions result, tag, downloadable ZIP, Brev login, Launchable deployment, GPU
 runtime, and cleanup remain unverified until checked separately.
 
+## v1.1.1 release verification, 27 October 2026
+
+This maintenance release aligns the distribution version and both setup prompts with
+the published package. Earlier tags remain unchanged. The final release notes identify
+the exact source commit, clean ZIP and SHA-256. Package validation, 24 regression tests,
+and the isolated setup smoke are rerun from the final source and downloaded release ZIP.
+The local release checks use the installed Python version recorded in the release notes;
+GitHub Actions separately exercises its configured operating-system/Python matrix.
+No simulator, GPU, cloud provisioning, authentication or hardware operation is performed.
+
 ## Not established by these checks
 
 - Assistant discovery or autonomous decision quality across every client/model.
